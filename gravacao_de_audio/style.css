@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(44, 62, 80,1.0);
+  color: #222;
+  font-size: 1em;
+  font-family: Arial, Helvetica, sans-serif;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+.container{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+}
+#startAudio,
+#stopAudio {
+  border: 0px;
+  width: 70px;
+  height: 70px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  transition: 800ms;
+  cursor: pointer;
+  margin:0 10px;
+}
+
+#startAudio {
+  background-color: rgba(41, 128, 185, .5);
+  border-color: rgba(41, 128, 185, .7);
+}
+
+#stopAudio {
+  background-color: rgba(192, 57, 43, .5);
+  border-color: rgba(192, 57, 43, .7);
+}
+
+#startAudio i {
+  font-size: 2em;
+  color: rgba(41, 128, 185, 1.0);
+}
+
+#stopAudio i {
+  font-size: 2em;
+  color: rgba(192, 57, 43, 1.0);
+}
+
+#startAudio:hover {
+  background-color: rgba(41, 128, 185, .7);
+
+}
+
+#stopAudio:hover{
+  background-color: rgba(192, 57, 43, .7);
+
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}

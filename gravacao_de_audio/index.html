@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <button id="startAudio">
+        <i class="fa-solid fa-microphone"></i>
+      </button>
+      <button id="stopAudio">
+        <i class="fa-solid fa-stop"></i>
+      </button>
+    </div>
+    <div class="logo">
+      <audio src="" id="audio" controls class="hidden">
+        Seu navegado não suporta a tag <code>audio</code>.
+      </audio>
+    </div>
+
+
+  </div>
+  <script src="./src/index.mjs" type="module"></script>
+</body>
+
+</html>
