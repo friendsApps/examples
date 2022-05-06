@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+	margin:0;
+	padding:0;
+	outline: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background-color:#34495e;
+}
+
+.loader{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 120px;
+	height: 75px;
+	display:flex;
+	flex-wrap: wrap;
+	align-items: flex-end;
+	justify-content: space-between;
+}
+
+.loader span{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	text-transform: uppercase;
+	margin: auto;
+	font-weight: 700;
+	color: white;
+}
+.ball{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #fff;
+	animation: bounce .5s alternate infinite;
+}
+.ball:nth-child(2){
+	animation-delay: .16s;
+}
+.ball:nth-child(3){
+	animation-delay: .32s;
+}
+@keyframes bounce{
+	from {
+		transform: scaleX(1.25);
+	}
+	to{
+		transform: translateY(-50px) 
+		scaleX(1);
+	}
+}
