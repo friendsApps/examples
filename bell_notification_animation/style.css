@@ -1,6 +1,9 @@
 @import url('../styleGlobal.css');
 
-/* General styles end */
+.container {
+	left: calc(50% - 50px) !important;
+}
+
 .icon-wrapper{
   width: 50px;
   height: 50px;
