@@ -1,0 +1,30 @@
+@import url("../styleGlobal.css");
+.title{
+  color: var(--white);
+  text-transform: uppercase;
+  line-height: 40px;
+  font-weight: 300;
+}
+.title-content{
+  display: block; 
+  opacity: 0;
+  animation: revealText .5s forwards;
+}
+.title-second{
+  animation-delay: .175s;
+}
+.title-third{
+  animation-delay: .25s;
+}
+.title-fourth{
+  animation-delay: .325s;
+}
+@keyframes revealText {
+  from{
+      transform: translateY(20px); 
+  }
+  to{
+      opacity: 1; 
+      transform: none;
+  }
+}
