@@ -1,0 +1,28 @@
+@import url("../styleGlobal.css");
+
+label{
+  display: block;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+
+input {position: absolute; transform: scale(0);}
+input:checked ~ .checkbox{
+  transform: rotate(45deg);
+  width: 20px;
+  margin-left: 16px;
+  border-color: var(--primary);
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-radius: 0px;
+}
+
+.checkbox{
+  display: block;
+  width: inherit;
+  height: inherit;
+  border: 3px solid var(--white);
+  border-radius: 6px;
+  transition: all 0.375s;
+}
