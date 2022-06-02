@@ -1,0 +1,55 @@
+@import url("../../styleGlobal.css");
+
+.opt-field{
+  display:flex;
+}
+.opt-field input{
+  width:24px;
+  font-size: 32px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  margin: 2px;
+  border: 2px solid #55525c;
+  background: #21232d;
+  font-weight: bold;
+  color:#FFF;
+  outline:  none;
+  transition: all 0.1s;
+}
+.opt-field input:focus{
+  border: 2px solid #a527ff;
+  box-shadow: 0 0 2px 2px #a527ff6a;
+}
+.disbled{
+  opacity: 0.5;
+}
+.space{
+  margin-right: 1rem !important;
+}
+
+.btn{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+  font-size: 1em;
+  background-color: var(--green);
+  color:#fff;
+  border:1px solid var(--green);
+  padding: 12px 24px;
+  border-radius: 18px;
+  transition: all 500ms;
+  cursor:pointer;
+}
+
+
+.btn:hover{
+  filter: brightness(90%);
+}
+
+.btn:disabled{
+  opacity: 0.5;
+}
